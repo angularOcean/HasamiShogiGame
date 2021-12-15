@@ -13,6 +13,8 @@ Players take turns moving a piece in an attempt to capture their opponents piece
 
 Pieces are captured by 'sandwiching' the opponents piece or pieces between two of their own pieces either vertically or horizontally in neighboring board spaces.
 
+Corner pieces can also be captured by a player placing two of their pieces on the board tiles orthogonally adjacent to the corner piece.
+
 Multiple pieces can be captured in one sandwich as long as all the board spaces between the players two capturing pieces are filled with the opponents pieces.
 
 A player wins when they have captured all or all but one of the opponents pieces.

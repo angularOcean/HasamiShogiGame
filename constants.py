@@ -3,8 +3,10 @@
 
 import pygame
 
-#constants
+'''Constants for the game include colors, number of pixels for the screen output,
+size of the squares, and size of the game pieces, their outline, and highlight size.'''
 fps = 60
+
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)

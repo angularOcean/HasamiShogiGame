@@ -1,4 +1,5 @@
-#Hasami Shogi Board Game by Herakles Li
+#Hasami Shogi Board Game by HL
+#This is the main file for the game library
 
 import pygame
 from pygame.locals import (MOUSEBUTTONUP, K_ESCAPE, KEYDOWN)
@@ -25,6 +26,9 @@ textRectObj.center = (screenHeight/2, screenHeight/10)
 
 #deal with mouse movement
 def get_row_col_mouse(pos):
+    '''This function handles player mouse selection
+    Receives: pos as the x,y coordinates of the mouse click
+    Returns: Two character string coordinates of the where on the Shogi board the player clicked'''
     x, y = pos
     row = int(y//squareSize)
     col = int(x//squareSize)
@@ -35,6 +39,9 @@ def get_row_col_mouse(pos):
 
 #Draw Window
 def draw_window1(pos):
+    '''This method draws the board and pieces on the game window and also highlights a selected piece
+    Receives: pos of mouse click
+    Returns: None'''
     screen.fill(white)
     new_game.draw_grid()
     new_game.highlight_piece(get_row_col_mouse(pos), screen, squareSize)
@@ -42,6 +49,9 @@ def draw_window1(pos):
     pygame.display.update()
 
 def draw_window2():
+    '''This method draws the board and pieces on the game window
+    Receives: None
+    Returns: None'''
     screen.fill(white)
     new_game.draw_grid()
     new_game.draw_pieces(screen, squareSize)
@@ -49,6 +59,9 @@ def draw_window2():
 
 #Game Loop
 def main():
+    '''This function runs as the main loop for the Shogi game while Running is True the game will run through a loop to
+    check mouse clicks with piece movement, and update the screen based on the movement and board state until the game
+    is over after which it will enter the game is finished state.'''
     running = True
     finished = False
     firstClick = False
@@ -88,6 +101,7 @@ def main():
             running = False
             finished = True
 
+    #When game is finished, the winner will be printed on the screen.
     while finished:
         printWinner = None
         if event.type == KEYDOWN:
@@ -102,4 +116,5 @@ def main():
         pygame.display.update()
 
 if __name__ == '__main__':
+    '''Method to have main run as a function if file run directly but not otherwise.'''
     main()

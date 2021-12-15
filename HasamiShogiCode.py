@@ -1,4 +1,4 @@
-#This file contains
+#This file contains the main code base for the Hasami Shogi Game
 
 import pygame
 from constants import *
@@ -358,6 +358,10 @@ class HasamiShogiGame:
             print(string_row)
 
     def draw_grid(self):
+        '''This method passes information on how to draw the game board as a grid on the graphics screen to main.py
+        Parameters: None
+        Returns: None
+        Effect: draws black lines on the game screen to create Shogi Board'''
         gridSize = int(screenHeight / 9)
         for x in range(0, int(screenHeight), gridSize):
             for y in range(0, int(screenHeight), gridSize):
@@ -365,6 +369,10 @@ class HasamiShogiGame:
                 pygame.draw.rect(screen, black, rect, 1)
 
     def draw_pieces(self, surface, squareSize):
+        '''This method passes information on how to draw the game pieces onto the graphics screen to main.py
+        Parameters: Recieves the pygame screen surface to draw the pieces as well as the size of the board squares
+        Returns: None
+        Effect: Draws red or black pieces with a gray outline onto the game screen'''
         def draw(surface, color, x, y):
             radius = squareSize//2 - padding
             center= squareSize//2
@@ -380,6 +388,12 @@ class HasamiShogiGame:
                     draw(surface,black, row, col)
 
     def highlight_piece(self, coordinate, surface, squareSize):
+        '''
+        This method highlights a  game piece with a green outline when selected on the graphics screen
+        Parameters: the coordinates of the mouse click, the screen surface, and the size of the squares
+        Returns: None
+        Effect: A green outline will be drawn on the selected game piece.
+        '''
         location = self._move_dict[coordinate]
         radius = squareSize // 2 - padding
         center = squareSize // 2
