@@ -1,3 +1,6 @@
+#This file contains constants utilized by the main.py and HasamiShogiCode
+# files to set the game files graphical user interface components
+
 import pygame
 
 #constants
