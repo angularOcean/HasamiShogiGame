@@ -1,12 +1,12 @@
 # Hasami Shogi Game
 This repository contains code for playing the board game Hasami Shogi coded using Python.
 
-#Game Synopsis
+# Game Synopsis
 Hasami Shogi is a variant of traditional Shogi which is a Japanese chess-like game and is itself made up of two main variants, Variant 1 and Variant 2.
 
 This version of the game employs Variant 1's rules.
 
-#Gameplay
+# Gameplay
 Gameplay involves a single type of game piece which can move any number of squares vertically or horizontally on the board similar to a rook piece in chess.
 
 Players take turns moving a piece in an attempt to capture their opponents pieces.
@@ -19,7 +19,7 @@ A player wins when they have captured all or all but one of the opponents pieces
 
 More about the game can be read here: https://en.wikipedia.org/wiki/Hasami_shogi
 
-#Running the Game/Getting Started
+# Running the Game/Getting Started
 This repository contains three files: constants.py, HasamiShogiCode.py, and main.py.
 
 The game can be run through the main.py file.
@@ -30,5 +30,5 @@ The game can be run through the main.py file.
 
 <b>main.py:</b> Generates a simple graphical user interface of the pieces and Shogi board for the game utilizing pygame.
 
-#Dependencies
+# Dependencies
 This game requires pygame to run. More about pygame can be found at: https://www.pygame.org/wiki/GettingStarted
