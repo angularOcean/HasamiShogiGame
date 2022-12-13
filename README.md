@@ -1,5 +1,5 @@
 # Hasami Shogi Game
-This repository contains code for playing the board game Hasami Shogi coded using Python.
+This repository is for a terminal based version of the board game Hasami Shogi coded using Python.
 
 # Game Synopsis
 Hasami Shogi is a variant of traditional Shogi which is a Japanese chess-like game and is itself made up of two main variants, Variant 1 and Variant 2.
@@ -22,7 +22,7 @@ A player wins when they have captured all or all but one of the opponents pieces
 More about the game can be read here: https://en.wikipedia.org/wiki/Hasami_shogi
 
 # Running the Game/Getting Started
-This repository contains three files: constants.py, HasamiShogiCode.py, and main.py.
+Download the contents of this repository which contains three files: constants.py, HasamiShogiCode.py, and main.py, into a single folder
 
 The game can be run through the main.py file.
 
